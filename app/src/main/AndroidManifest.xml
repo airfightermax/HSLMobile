@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rebosura.hslmobile">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true">
+        <activity android:name=".MainActivity" android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LearnActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name=".AlphabetActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name=".AlphabetSelectorActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name=".QuizSelectorActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name=".AdvancedQuizActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name=".EasyQuizActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name=".IntermediateQuizActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name=".QuizActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name=".QuizResult" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name=".AnimalActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name=".AnimalSelectorActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name=".DictionarySelectorActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".DictionayActivity" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

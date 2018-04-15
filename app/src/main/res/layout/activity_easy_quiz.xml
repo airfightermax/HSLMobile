@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvCurentPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1" />
+        <TextView
+            android:id="@+id/tvOutOf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/10"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/btnBack" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What letter does this hand sign mean?"
+        android:id="@+id/tvQuestion"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layoutImage"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvQuestion">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/ivQuestion"
+            android:src="@drawable/g"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutImage"
+        android:layout_marginEnd="39dp"
+        android:layout_toStartOf="@+id/layoutImage"
+        android:text="Letter H" />
+
+    <Button
+        android:id="@+id/btnOption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnOption1"
+        android:layout_below="@+id/btnOption1"
+        android:layout_marginTop="13dp"
+        android:text="Letter G" />
+
+    <Button
+        android:id="@+id/btnOption3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutImage"
+        android:layout_marginStart="39dp"
+        android:layout_toEndOf="@+id/layoutImage"
+        android:text="Letter R" />
+
+    <Button
+        android:id="@+id/btnOption4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnOption3"
+        android:layout_below="@id/btnOption3"
+        android:layout_marginTop="13dp"
+        android:text="A" />
+
+</RelativeLayout>

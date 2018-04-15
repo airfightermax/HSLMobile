@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvCurrentPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1" />
+        <TextView
+            android:id="@+id/tvOutOf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/10"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/layoutQuestion">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question goes here"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:id="@+id/tvQuestion"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnOption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnOption2"
+        android:layout_marginLeft="64dp"
+        android:layout_alignParentLeft="true"
+        android:text="Choice 1" />
+
+    <Button
+        android:id="@+id/btnOption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="64dp"
+        android:layout_marginBottom="64dp"
+        android:text="Choice 2" />
+
+    <Button
+        android:id="@+id/btnOption3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/btnOption4"
+        android:layout_marginRight="64dp"
+        android:text="Choice 3" />
+
+    <Button
+        android:id="@+id/btnOption4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_alignParentRight="true"
+        android:text="Choice 4" />
+</RelativeLayout>
